@@ -61,6 +61,9 @@ void draw() {
   //ball bounce
 if (ballx <= balld/2 || ballx >= width-balld/2) vx= -vx;
 if (bally <= balld/2 || bally >= height-balld/2) vy= -vy;
+
+if (dist(player1x, player1y, ballx, bally) <= player1d/2 +balld/2) {
+vx=vy=0;
 }
 
 void keyPressed() {
