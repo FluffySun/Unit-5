@@ -14,6 +14,8 @@ player1d; //diameter
 float player2x,player2y, //position
 player2d; //diameter
 
+float ballx, bally,balld, vx, vy;
+
 //key variables
 boolean aKey, dKey, wKey, sKey, upKey, downKey, rightKey, leftKey;
 
@@ -27,7 +29,13 @@ void setup() { //player 1x vs player 2x...
   player2x = width/2;
   player2y = height/2;
   player2d = 100;
-  
+
+  ballx = width/2;
+  bally=height/2;
+  balld = 50;
+
+  vx= -4;
+  vy= -5;
 }
 
 void draw() {
@@ -45,7 +53,14 @@ void draw() {
   if (leftKey) player2x = player2x -5;
   if (upKey) player2y = player2y - 5;
   if (downKey) player2y = player2y + 5;
-  
+
+  //ball mvt
+  ballx += vx;
+  bally += vy;
+
+  //ball bounce
+if (ballx <= balld/2 || ballx >= width-balld/2) vx= -vx;
+if (bally <= balld/2 || bally >= height-balld/2) vy= -vy;
 }
 
 void keyPressed() {
