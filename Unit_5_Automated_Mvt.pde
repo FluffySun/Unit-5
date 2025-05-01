@@ -65,3 +65,8 @@ void draw(){
     ballx = width - balld/2;
   }
 }
+
+//Collision of 2 Circles
+//Distance between centers when colliding= radius + radius
+
+//if (dist(x1,y1,x2,y2) <= R+R)
