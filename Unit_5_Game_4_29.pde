@@ -17,7 +17,6 @@ player2d; //diameter
 //key variables
 boolean aKey, dKey, wKey, sKey, upKey, downKey, rightKey, leftKey;
 
-
 void setup() { //player 1x vs player 2x...
   size (600, 600);
   player1x = width/2;
@@ -27,6 +26,7 @@ void setup() { //player 1x vs player 2x...
   player2x = width/2;
   player2y = height/2;
   player2d = 100;
+
   
 }
 
