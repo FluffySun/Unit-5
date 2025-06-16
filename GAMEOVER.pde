@@ -3,6 +3,12 @@ void gameOver() {
   fill(white);
   textSize(32);
   text("Game Over!", width/2, height/2);
+  
+  if (leftscore>rightscore) {
+    
+  }else{
+    
+  }
 }
 
 void gameOverClicks() {
