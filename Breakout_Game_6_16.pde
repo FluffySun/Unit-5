@@ -13,7 +13,7 @@ int n;
 int tempx, tempy; //calculation
 
 //Fonts
-PFont.list();
+//PFont.list();
 //Mali-Bold//-48;
 
 //Colors 
@@ -96,7 +96,7 @@ void setup() {
   wkey=skey=upkey=downkey=false;
    
   //:PONG ENDS
-}
+
   
   //set up paddle & ball
   bx = width/2;
@@ -129,7 +129,7 @@ void setup() {
     }
     i=i+1; //SWITCH EVERYTHING FOR THE ROWS OF CIRCLES EACH DIFF COLOR
   }
-    
+}
 //NO NEED: x[0]=10; //in the book x, on page 0
 
 //When put bricks into void game: circle(X[0],y[0],100);
